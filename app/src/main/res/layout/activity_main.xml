@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <ImageButton
         android:id="@+id/btnConfiguration"
@@ -21,17 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/white" />
 
-    <ImageView
-        android:id="@+id/imgTitleIcon"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="36dp"
-        android:contentDescription="@string/img_title_background_content_description"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
-
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
@@ -45,14 +34,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConfiguration" />
 
+    <ImageView
+        android:id="@+id/imgTitleIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/img_title_background_content_description"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtThemeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_theme_title"
+        android:textSize="@dimen/txt_theme_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitleIcon" />
+
+    <Spinner
+        android:id="@+id/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtThemeTitle"
+        tools:layout_editor_absoluteX="20dp" />
+
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="@dimen/btn_play_layout_width"
         android:layout_height="@dimen/btn_play_layout_height"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="48dp"
         android:text="@string/btn_play"
+        android:textSize="@dimen/btn_play_text_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTitleIcon" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTheme" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
