@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
     <style name="Theme.JogoDaForca" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -13,7 +13,7 @@
         <item name="android:statusBarColor">@color/background</item>
         <!-- Customize your theme here. -->
 
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/font_family_quicksand</item>
 
         <item name="android:windowLightStatusBar">true</item>
     </style>

@@ -12,7 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/background</item>
         <!-- Customize your theme here. -->
-
-        <item name="android:fontFamily">@font/roboto_bold</item>
     </style>
 </resources>
