@@ -7,7 +7,30 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="medium_blue">#3d3de0</color>
+    <color name="lavender">#b5b5e8</color>
+    <color name="midnight_blue">#1a1a21</color>
+    <color name="gray">#D8D8D8</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="dim_gray">#3E3E3E</color>
+    <color name="darker_gray">#7E7E7E</color>
 
-    <color name="primary">@color/purple_700</color>
+    <color name="primary">@color/medium_blue</color>
+
+    <!-- Button -->
+
+    <color name="button">@color/medium_blue</color>
+    <color name="button_pressed">@color/midnight_blue</color>
+    <color name="button_disabled">@color/gray</color>
+
+        <!-- Button Text -->
+
+    <color name="button_text">@color/white</color>
+    <color name="button_text_pressed">@color/midnight_blue</color>
+    <color name="button_text_disabled">@color/dark_gray</color>
+
+    <!-- Others -->
+
     <color name="background">@color/white</color>
+    <color name="text">@color/midnight_blue</color>
 </resources>

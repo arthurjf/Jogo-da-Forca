@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".view.MainActivity">
 
     <ImageButton
@@ -19,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/button_text" />
 
     <TextView
         android:id="@+id/txtTitle"
@@ -27,7 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="@string/app_name"
+        android:textFontWeight="900"
         android:textAllCaps="true"
+        android:textColor="@color/text"
         android:textSize="@dimen/txt_title_text_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/txt_theme_title"
+        android:textColor="@color/text"
         android:textSize="@dimen/txt_theme_title_text_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,9 +77,11 @@
         android:layout_width="@dimen/btn_play_layout_width"
         android:layout_height="@dimen/btn_play_layout_height"
         android:layout_marginTop="48dp"
+        android:background="@drawable/btn_background"
         android:text="@string/btn_play"
         android:textSize="@dimen/btn_play_text_size"
         android:textStyle="bold"
+        android:textColor="@color/button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerTheme" />

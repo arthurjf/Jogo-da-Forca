@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary">@color/purple_200</color>
-    <color name="background">@color/black</color>
+
+    <!-- Button -->
+
+    <color name="button">@color/purple_200</color>
+    <color name="button_pressed">@color/lavender</color>
+    <color name="button_disabled">@color/darker_gray</color>
+
+        <!-- Button Text -->
+
+    <color name="button_text">@color/midnight_blue</color>
+    <color name="button_text_pressed">@color/midnight_blue</color>
+    <color name="button_text_disabled">@color/dim_gray</color>
+
+    <!-- Others -->
+
+    <color name="background">@color/midnight_blue</color>
+    <color name="text">@color/white</color>
 </resources>
