@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import br.com.arthurjf.jogodaforca.R
+import com.jaredrummler.materialspinner.MaterialSpinner
 
 class MainActivityFragment : Fragment() {
 
@@ -38,14 +39,14 @@ class MainActivityFragment : Fragment() {
     ): View {
 
         val view = inflater.inflate(R.layout.fragment_main, container, false)
-        val spinner = view.findViewById<Spinner>(R.id.spinnerTheme)
+        val spinner = view.findViewById<MaterialSpinner>(R.id.spinnerTheme)
 
         viewModel.themesLiveData.observe(viewLifecycleOwner) { themes ->
             val themesList = themes.themes.map { it.name }
             val adapter =
                 ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, themesList)
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinner.adapter = adapter
+            spinner.setAdapter(adapter)
         }
 
         return view
