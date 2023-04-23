@@ -41,7 +41,7 @@
         android:layout_width="220dp"
         android:layout_height="220dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/btn_background"
+        android:background="@drawable/icon_background"
         android:contentDescription="@string/img_title_background_content_description"
         android:padding="25dp"
         android:src="@drawable/icon"
@@ -70,9 +70,12 @@
         android:layout_height="@dimen/spinner_layout_height"
         android:layout_margin="20dp"
         android:layout_marginTop="12dp"
+        android:textColor="@color/spinner_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtThemeTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/txtThemeTitle"
+        app:ms_arrow_tint="@color/spinner_arrow"
+        app:ms_background_color="@color/spinner_background" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPlay"

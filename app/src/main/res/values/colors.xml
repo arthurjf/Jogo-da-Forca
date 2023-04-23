@@ -29,6 +29,14 @@
     <color name="button_text_pressed">@color/midnight_blue</color>
     <color name="button_text_disabled">@color/dark_gray</color>
 
+    <!-- Icon Background -->
+    <color name="icon_background">@color/dim_gray</color>
+
+    <!-- Spinner -->
+    <color name="spinner_background">@color/gray</color>
+    <color name="spinner_arrow">@color/dim_gray</color>
+    <color name="spinner_text">@color/dim_gray</color>
+
     <!-- Others -->
 
     <color name="background">@color/white</color>
