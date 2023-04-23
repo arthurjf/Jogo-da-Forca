@@ -9,7 +9,7 @@ class GameplayActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gameplay_activity)
+        setContentView(R.layout.activity_gameplay)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, GameplayActivityFragment.newInstance())
