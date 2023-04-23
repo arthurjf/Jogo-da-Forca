@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import br.com.arthurjf.jogodaforca.R
 
 class MainActivityFragment : Fragment() {
@@ -18,15 +20,35 @@ class MainActivityFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
+        viewModel =
+            ViewModelProvider(
+                this,
+                MainViewModel.MainViewModelFactory(ThemesRepository(requireContext()))
+            )[MainViewModel::class.java]
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.getThemes()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+
+        val view = inflater.inflate(R.layout.fragment_main, container, false)
+        val spinner = view.findViewById<Spinner>(R.id.spinnerTheme)
+
+        viewModel.themesLiveData.observe(viewLifecycleOwner) { themes ->
+            val themesList = themes.themes.map { it.name }
+            val adapter =
+                ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, themesList)
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner.adapter = adapter
+        }
+
+        return view
     }
 
 }
