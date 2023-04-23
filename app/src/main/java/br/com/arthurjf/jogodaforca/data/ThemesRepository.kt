@@ -1,4 +1,4 @@
-package br.com.arthurjf.jogodaforca.view.ui.main
+package br.com.arthurjf.jogodaforca.data
 
 import android.content.Context
 import com.google.gson.Gson

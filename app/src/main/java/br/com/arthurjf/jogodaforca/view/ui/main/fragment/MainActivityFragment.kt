@@ -1,4 +1,4 @@
-package br.com.arthurjf.jogodaforca.view.ui.main
+package br.com.arthurjf.jogodaforca.view.ui.main.fragment
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import br.com.arthurjf.jogodaforca.R
+import br.com.arthurjf.jogodaforca.data.ThemesRepository
+import br.com.arthurjf.jogodaforca.view.ui.viewmodel.MainViewModel
 import com.jaredrummler.materialspinner.MaterialSpinner
 
 class MainActivityFragment : Fragment() {

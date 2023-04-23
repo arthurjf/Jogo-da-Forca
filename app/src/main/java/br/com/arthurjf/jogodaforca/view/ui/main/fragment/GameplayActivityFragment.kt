@@ -1,4 +1,4 @@
-package br.com.arthurjf.jogodaforca.view.ui.main
+package br.com.arthurjf.jogodaforca.view.ui.main.fragment
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.arthurjf.jogodaforca.R
+import br.com.arthurjf.jogodaforca.view.ui.viewmodel.GameplayViewModel
 
 class GameplayActivityFragment : Fragment() {
 

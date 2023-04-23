@@ -3,7 +3,7 @@ package br.com.arthurjf.jogodaforca.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.arthurjf.jogodaforca.R
-import br.com.arthurjf.jogodaforca.view.ui.main.MainActivityFragment
+import br.com.arthurjf.jogodaforca.view.ui.main.fragment.MainActivityFragment
 
 class MainActivity : AppCompatActivity() {
 
