@@ -7,7 +7,7 @@
     tools:context=".view.GameplayActivity">
 
     <ImageButton
-        android:id="@+id/btnConfiguration2"
+        android:id="@+id/btnConfiguration"
         android:layout_width="@dimen/btn_circle_layout_width"
         android:layout_height="@dimen/btn_circle_layout_height"
         android:layout_marginTop="@dimen/btn_circle_layout_margin_top"
@@ -19,5 +19,5 @@
         app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/button_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
