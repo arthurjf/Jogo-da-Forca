@@ -6,4 +6,11 @@
     <string name="txt_theme_title">Tema</string>
     <string name="placeholder">Placeholder</string>
     <string name="btn_create_game">Criar Jogo</string>
+    <string name="dialog_create_game_title">Jogo Customizado</string>
+    <string name="dialog_create_game_word_title">Palavra</string>
+    <string name="dialog_create_game_hint_title">Dica</string>
+    <string name="dialog_create_game_word_edt_hint">Ex: Avião</string>
+    <string name="dialog_create_game_hint_edt_hint">Ex: É formado por asas, fuselagem, trem de pouso e motores.</string>
+    <string name="dialog_create_game_btn_cancel">Cancelar</string>
+    <string name="dialog_create_game_btn_create_game">Criar Jogo</string>
 </resources>
