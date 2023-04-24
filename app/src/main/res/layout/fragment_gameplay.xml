@@ -38,7 +38,8 @@
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gallows" />
+        app:srcCompat="@drawable/gallows"
+        app:tint="@color/gameplay_icon" />
 
     <ImageView
         android:id="@+id/img_hangman"
@@ -49,7 +50,8 @@
         app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hangman_6" />
+        app:srcCompat="@drawable/hangman_6"
+        app:tint="@color/gameplay_icon" />
 
     <LinearLayout
         android:id="@+id/layout_word"

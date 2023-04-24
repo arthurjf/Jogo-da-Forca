@@ -22,6 +22,9 @@
     <color name="spinner_arrow">@color/midnight_blue</color>
     <color name="spinner_text">@color/midnight_blue</color>
 
+    <!-- Gameplay -->
+    <color name="gameplay_icon">@color/white</color>
+
     <!-- Others -->
     <color name="background">@color/midnight_blue</color>
     <color name="text">@color/white</color>

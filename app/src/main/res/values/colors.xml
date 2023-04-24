@@ -37,8 +37,10 @@
     <color name="spinner_arrow">@color/dim_gray</color>
     <color name="spinner_text">@color/dim_gray</color>
 
-    <!-- Others -->
+    <!-- Gameplay -->
+    <color name="gameplay_icon">@color/black</color>
 
+    <!-- Others -->
     <color name="background">@color/white</color>
     <color name="text">@color/midnight_blue</color>
 </resources>
