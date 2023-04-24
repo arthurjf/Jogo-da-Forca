@@ -7,15 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.main.fragment.GameplayActivityFragment">
 
-    <ImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnConfiguration"
         android:layout_width="@dimen/btn_circle_layout_width"
         android:layout_height="@dimen/btn_circle_layout_height"
         android:layout_marginTop="@dimen/btn_circle_layout_margin_top"
         android:layout_marginEnd="@dimen/btn_circle_layout_margin_end"
-        android:background="@drawable/btn_background"
         android:contentDescription="@string/btn_configurations_content_description"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
         android:src="@drawable/gear_solid"
+        app:cornerRadius="@dimen/btn_play_layout_height"
+        app:icon="@drawable/gear_solid"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
