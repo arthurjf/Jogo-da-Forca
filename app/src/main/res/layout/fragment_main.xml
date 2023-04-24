@@ -73,6 +73,7 @@
 
     <com.jaredrummler.materialspinner.MaterialSpinner
         android:id="@+id/spinnerTheme"
+        android:text="@string/placeholder"
         android:layout_width="@dimen/spinner_theme_layout_width"
         android:layout_height="@dimen/spinner_layout_height"
         android:layout_margin="20dp"
