@@ -22,7 +22,11 @@ Este projeto teve início de desenvolvimento em <code>14/04/2023</code> e durou 
 
 ### Captura(s)
 
+Nesta seção são exibidas capturas de imagem e vídeo da aplicação desenvolvida.
+
 ### Protótipo(s)
+
+Nesta seção são exibidas as telas de protótipo criadas no início do desenvolvimento da aplicação.
 
 #### Tela principal
 
