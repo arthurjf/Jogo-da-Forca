@@ -1,6 +1,8 @@
 # 🛠️ Em Desenvolvimento! 🛠️
 
+<div style="background-color: #FFC107; color: black; padding: 10px;">
 Esta aplicação ainda se encontra em desenvolvimento e muitas funcionalidades ainda não foram implementadas.
+</div>
 
 # JOGO DA FORCA
 
