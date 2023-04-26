@@ -18,6 +18,20 @@ Este projeto teve início de desenvolvimento em <code>14/04/2023</code> e durou 
 - [ ] Adicionar no Spinner de Temas de palavras, a opção de "Todas" presentes na aplicação.
 - [ ] Utilizar View Binding para pegar o ID dos componentes.
 
+## Galeria
+
+### Captura(s)
+
+### Protótipo(s)
+
+#### Tela principal
+
+<img src=".project/home.png" alt="Screenshot" width="25%">
+
+#### Tela de gameplay
+
+<img src=".project/gameplay.png" alt="Screenshot" width="25%">
+
 ## Tecnologia(s) Utilizad(s)
 - [Kotlin](https://kotlinlang.org/)
 - [Android Studio](https://developer.android.com/studio)
