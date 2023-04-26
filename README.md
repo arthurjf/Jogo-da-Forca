@@ -1,6 +1,8 @@
-# 🛠️ Em Desenvolvimento! 🛠️
+# 🛠️ **Em Desenvolvimento!** 🛠️
 
-⚠️ **Esta aplicação ainda se encontra em desenvolvimento e muitas funcionalidades ainda não foram implementadas.**
+<p style="text-align: justify">
+⚠️ Esta aplicação ainda se encontra em desenvolvimento e muitas funcionalidades ainda não foram implementadas.
+</p>
 
 # JOGO DA FORCA
 
