@@ -1,7 +1,7 @@
 # JOGO DA FORCA
 
 <p style="text-align: justify">
-O "Jogo da Forca" é um aplicativo Android que permite que os usuários joguem o clássico jogo de adivinhação. O aplicativo oferece diversas categorias de palavras, como `profissões, frutas, animais, países e estados do Brasil`, para que os usuários possam selecionar um tema e começar a jogar imediatamente. Além disso, os usuários também têm a opção de criar um jogo personalizado, digitando a palavra e a dica da forca.
+O "Jogo da Forca" é um aplicativo Android que permite que os usuários joguem o clássico jogo de adivinhação. O aplicativo oferece diversas categorias de palavras, como <code>profissões, frutas, animais, países e estados do Brasil</code>, para que os usuários possam selecionar um tema e começar a jogar imediatamente. Além disso, os usuários também têm a opção de criar um jogo personalizado, digitando a palavra e a dica da forca.
 </p>
 
 ## Descrição Técnica
