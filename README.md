@@ -11,7 +11,7 @@ Este aplicativo foi desenvolvido em <a href="https://kotlinlang.org/">Kotlin</a>
 </p>
 
 <p style="text-align: justify">
-Este projeto teve início de desenvolvimento em `14/04/2023` e durou até `o momento`.
+Este projeto teve início de desenvolvimento em <code>14/04/2023</code> e durou até <code>o momento</code>.
 </p>
 
 ## To-Do List
