@@ -7,7 +7,7 @@ O "Jogo da Forca" é um aplicativo Android que permite que os usuários joguem o
 ## Descrição Técnica
 
 <p style="text-align: justify">
-Este aplicativo foi desenvolvido em [Kotlin](https://kotlinlang.org/) utilizando o [Android Studio](https://developer.android.com/studio). As palavras e dicas são pré-salvas em um arquivo [Json](https://www.json.org/) que pode ser encontrado [aqui](app/src/main/assets/words.json).
+Este aplicativo foi desenvolvido em <a href="https://kotlinlang.org/">Kotlin</a> utilizando o <a href="https://developer.android.com/studio">Android Studio</a>. As palavras e dicas são pré-salvas em um arquivo <a href="https://www.json.org/">Json</a> que pode ser encontrado <a href="app/src/main/assets/words.json">aqui</a>.
 </p>
 
 <p style="text-align: justify">
