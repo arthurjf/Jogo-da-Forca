@@ -15,8 +15,8 @@
         android:text="@string/dialog_create_game_title"
         android:textAllCaps="true"
         android:textColor="@color/text"
-        android:textFontWeight="700"
-        android:textSize="30sp"
+        android:textFontWeight="900"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,6 @@
         android:ems="10"
         android:hint="@string/dialog_create_game_word_edt_hint"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWord" />
 
@@ -43,7 +42,6 @@
         android:ems="10"
         android:hint="@string/dialog_create_game_hint_edt_hint"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHint" />
 
@@ -64,7 +62,7 @@
             style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:text="@string/dialog_create_game_btn_cancel"
             android:textSize="15sp" />
@@ -73,7 +71,7 @@
             android:id="@+id/btnCreateGame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:text="@string/dialog_create_game_btn_create_game"
             android:textSize="15sp" />
@@ -89,7 +87,6 @@
         android:text="@string/dialog_create_game_word_title"
         android:textFontWeight="700"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
@@ -103,7 +100,6 @@
         android:text="@string/dialog_create_game_hint_title"
         android:textFontWeight="700"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtWord" />
 

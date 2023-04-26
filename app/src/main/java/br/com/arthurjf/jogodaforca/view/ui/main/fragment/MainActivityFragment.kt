@@ -7,12 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Button
 import br.com.arthurjf.jogodaforca.R
 import br.com.arthurjf.jogodaforca.data.ThemesRepository
+import br.com.arthurjf.jogodaforca.view.ui.CreateGameDialog
+import br.com.arthurjf.jogodaforca.view.ui.CreateGameDialogListener
 import br.com.arthurjf.jogodaforca.view.ui.viewmodel.MainViewModel
 import com.jaredrummler.materialspinner.MaterialSpinner
 
 class MainActivityFragment : Fragment() {
+
+    var buttonCreateGame: Button? = null
 
     companion object {
         fun newInstance() = MainActivityFragment()
@@ -48,6 +53,16 @@ class MainActivityFragment : Fragment() {
                 ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, themesList)
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.setAdapter(adapter)
+        }
+
+        buttonCreateGame = view.findViewById(R.id.btnCreate)
+
+        buttonCreateGame?.setOnClickListener{
+            CreateGameDialog(requireContext(), object : CreateGameDialogListener {
+                override fun onCreateGame(word: String, hint: String) {
+
+                }
+            }).show()
         }
 
         return view
