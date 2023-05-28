@@ -50,7 +50,10 @@ class MainActivityFragment : Fragment() {
     ): View {
 
         val view = inflater.inflate(R.layout.fragment_main, container, false)
+
         spinner = view.findViewById(R.id.spinnerTheme)
+        buttonPlay = view.findViewById(R.id.btnPlay)
+        buttonCreateGame = view.findViewById(R.id.btnCreate)
 
         viewModel.themesLiveData.observe(viewLifecycleOwner) { themes ->
             val themesList = themes.themes.map { it.name }
@@ -60,13 +63,10 @@ class MainActivityFragment : Fragment() {
             spinner?.setAdapter(adapter)
         }
 
-        buttonPlay = view.findViewById(R.id.btnPlay)
-        buttonCreateGame = view.findViewById(R.id.btnCreate)
-
         buttonCreateGame?.setOnClickListener {
             CreateGameDialog(requireContext(), object : CreateGameDialogListener {
                 override fun onCreateGame(word: String, hint: String) {
-
+                    callGameplayScreen(Word(word, hint))
                 }
             }).show()
         }
