@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
 import br.com.arthurjf.jogodaforca.R
-import br.com.arthurjf.jogodaforca.data.ThemesRepository
+import br.com.arthurjf.jogodaforca.data.JsonThemeDataProviderRepository
 import br.com.arthurjf.jogodaforca.data.Word
 import br.com.arthurjf.jogodaforca.view.GameplayActivity
 import br.com.arthurjf.jogodaforca.view.ui.CreateGameDialog
@@ -35,7 +35,7 @@ class MainActivityFragment : Fragment() {
         viewModel =
             ViewModelProvider(
                 this,
-                MainViewModel.MainViewModelFactory(ThemesRepository(requireContext()))
+                MainViewModel.MainViewModelFactory(JsonThemeDataProviderRepository(requireContext()))
             )[MainViewModel::class.java]
     }
 

@@ -4,13 +4,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import br.com.arthurjf.jogodaforca.data.Themes
-import br.com.arthurjf.jogodaforca.data.ThemesRepository
+import br.com.arthurjf.jogodaforca.data.JsonThemeDataProviderRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class MainViewModel(private val themesRepository: ThemesRepository) : ViewModel() {
+class MainViewModel(private val themesRepository: JsonThemeDataProviderRepository) : ViewModel() {
     val themesLiveData = MutableLiveData<Themes>()
 
     fun getThemes() {
@@ -23,7 +23,7 @@ class MainViewModel(private val themesRepository: ThemesRepository) : ViewModel(
         }
     }
 
-    class MainViewModelFactory(private val repository: ThemesRepository) :
+    class MainViewModelFactory(private val repository: JsonThemeDataProviderRepository) :
         ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             return MainViewModel(repository) as T
