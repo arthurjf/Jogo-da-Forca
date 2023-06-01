@@ -27,11 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/dialog_create_game_word_edt_hint"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWord" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGameplayHint" />
 
     <EditText
         android:id="@+id/edtHint"
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/dialog_create_game_hint_edt_hint"
         android:inputType="text"
@@ -58,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtHint">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCancel"
+            android:id="@+id/btnClose"
             style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -78,7 +80,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/txtWord"
+        android:id="@+id/txtGameplayHint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

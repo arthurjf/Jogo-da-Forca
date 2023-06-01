@@ -19,7 +19,7 @@ class CreateGameDialog(context: Context, var listener: CreateGameDialogListener)
         setContentView(R.layout.dialog_create_custom_game)
 
         buttonCreate = findViewById(R.id.btnCreateGame)
-        buttonCancel = findViewById(R.id.btnCancel)
+        buttonCancel = findViewById(R.id.btnClose)
         fieldWord = findViewById(R.id.edtWord)
         fieldHint = findViewById(R.id.edtHint)
 
