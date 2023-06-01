@@ -21,16 +21,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnClose"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/dialog_create_game_btn_cancel"
+        android:text="@string/dialog_hint_btn_close"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +42,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
+        android:justificationMode="inter_word"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
