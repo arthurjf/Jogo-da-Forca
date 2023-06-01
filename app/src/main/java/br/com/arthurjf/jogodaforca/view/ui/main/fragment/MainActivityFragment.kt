@@ -51,9 +51,7 @@ class MainActivityFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_main, container, false)
 
-        spinner = view.findViewById(R.id.spinnerTheme)
-        buttonPlay = view.findViewById(R.id.btnPlay)
-        buttonCreateGame = view.findViewById(R.id.btnCreate)
+        setupView(view)
 
         viewModel.themesLiveData.observe(viewLifecycleOwner) { themes ->
             val themesList = themes.themes.map { it.name }
@@ -63,23 +61,17 @@ class MainActivityFragment : Fragment() {
             spinner?.setAdapter(adapter)
         }
 
-        buttonCreateGame?.setOnClickListener {
-            CreateGameDialog(requireContext(), object : CreateGameDialogListener {
-                override fun onCreateGame(word: String, hint: String) {
-                    callGameplayScreen(Word(word, hint))
-                }
-            }).show()
-        }
+        buttonCreateGame?.setOnClickListenerNewCustomGame()
 
-        buttonPlay?.setOnClickListener {
-            val selectedTheme = spinner?.selectedIndex?.let {
-                viewModel.themesLiveData.value?.themes?.get(it)
-            }
-
-            selectedTheme?.words?.let { callGameplayScreen(it.random()) }
-        }
+        buttonPlay?.setOnClickListenerStartGame()
 
         return view
+    }
+
+    private fun setupView(view: View) {
+        spinner = view.findViewById(R.id.spinnerTheme)
+        buttonPlay = view.findViewById(R.id.btnPlay)
+        buttonCreateGame = view.findViewById(R.id.btnCreate)
     }
 
     private fun callGameplayScreen(wordData: Word) {
@@ -87,5 +79,24 @@ class MainActivityFragment : Fragment() {
         intent.putExtra(GameplayActivity.WORD_KEY, wordData)
         startActivity(intent)
         requireActivity().finish()
+    }
+
+    private fun Button.setOnClickListenerNewCustomGame() {
+        setOnClickListener {
+            CreateGameDialog(requireContext(), object : CreateGameDialogListener {
+                override fun onCreateGame(word: String, hint: String) {
+                    callGameplayScreen(Word(word, hint))
+                }
+            }).show()
+        }
+    }
+
+    private fun Button.setOnClickListenerStartGame() {
+        setOnClickListener {
+            val selectedTheme = spinner?.selectedIndex?.let {
+                viewModel.themesLiveData.value?.themes?.get(it)
+            }
+            selectedTheme?.words?.let { callGameplayScreen(it.random()) }
+        }
     }
 }

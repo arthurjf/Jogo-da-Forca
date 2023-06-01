@@ -15,15 +15,22 @@ class HintDialog(context: Context, val viewModel: GameplayViewModel) : Dialog(co
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.dialog_hint)
 
-        textHint = findViewById(R.id.txtGameplayHint)
-        buttonClose = findViewById(R.id.btnClose)
+        setupView()
 
         textHint?.text = viewModel.wordData.value?.hint
 
-        buttonClose?.setOnClickListener {
+        buttonClose?.closeDialog()
+    }
+
+    private fun setupView(){
+        textHint = findViewById(R.id.txtGameplayHint)
+        buttonClose = findViewById(R.id.btnClose)
+    }
+
+    private fun Button.closeDialog() {
+        setOnClickListener {
             cancel()
         }
     }
