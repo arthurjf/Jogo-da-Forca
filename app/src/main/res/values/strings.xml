@@ -2,6 +2,7 @@
     <string name="app_name">Jogo da Forca</string>
     <string name="btn_play">Jogar</string>
     <string name="btn_configurations_content_description">Abrir configurações do jogo</string>
+    <string name="btn_hint_content_description">Ver a dica da palavra</string>
     <string name="img_title_background_content_description">Ícone do jogo</string>
     <string name="txt_theme_title">Tema</string>
     <string name="placeholder">Placeholder</string>
